@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcolo Biglietto Treno</title>
+</head>
+<body>
+    <h1>Calcolo del Prezzo del Biglietto del Treno</h1>
+    <form id="ticket-form">
+        <label for="kilometri">Numero di chilometri da percorrere:</label>
+        <input type="number" id="kilometri" required><br><br>
+
+        <label for="sconto">Seleziona il tipo di sconto:</label>
+        <select id="sconto">
+            <option value="nessuno">Nessuno</option>
+            <option value="studente">Studente (-20%)</option>
+            <option value="over65">Over 65 (-40%)</option>
+        </select><br><br>
+
+        <button type="submit">Calcola Prezzo</button>
+    </form>
+
+    <h2>Prezzo finale:</h2>
+    <p id="output"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
